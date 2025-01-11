@@ -5,7 +5,11 @@ from email.message import EmailMessage
 
 PW = os.getenv("PASSWORD")
 SENDER = "peterszerzo@gmail.com"
+
+
 def send_email(attachment):
+    print("email started")
+
     email_message = EmailMessage()
     email_message["Subject"] = "New movement"
     email_message.set_content("We just saw something new")
